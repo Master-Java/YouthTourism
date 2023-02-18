@@ -1,0 +1,20 @@
+server:
+  port: 8080
+  servlet:
+    context-path: "/"
+
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  datasource:
+    url: jdbc:postgresql://localhost:5432/hackathon
+    username: formating-site
+    password: formating-site
+    driver-class-name: org.postgresql.Driver
+
+jwt:
+  secret: hackathon
+
+flyway:
+  enabled: true
